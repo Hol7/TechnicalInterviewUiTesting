@@ -18,7 +18,7 @@ export default function HouseCard() {
         <div className="w-full md:max-w-2xl mx-auto">
           <div
             id="default-carousel"
-            className="visible sm:invisible lg:visible relative overflow-hidden shadow-lg"
+            className="invisible lg:visible relative overflow-hidden shadow-lg"
             style={{
               borderTopLeftRadius: 6,
               borderTopRightRadius: 6,
