@@ -11,7 +11,7 @@ import SmallMapDetailHouse from "./smallMapDetailHouse";
 export default function GalleriedetailHouse() {
 
 	return (
-    <div className=" pt-4 px-40">
+    <div className=" pt-4 md:px-40">
       <div className=" flex justify-center align-center w-full h-[400px]">
         <div className="w-[70%] pl-14 flex   cursor-pointer r justify-center content-center align-center">
           <Image

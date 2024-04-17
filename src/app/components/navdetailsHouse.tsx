@@ -54,7 +54,7 @@ export default function NavdetailsHouse() {
       ];
 
 	return (
-        <div className="flex justify-end items-center pt-16 px-10">
+        <div className="hidden md:flex justify-end items-center pt-16 px-10">
         <ul className="hidden md:flex mr-4 mt-2">
           {links.map(({ id, link, name }) => (
             <li
