@@ -20,20 +20,23 @@ export default function CenterTwoSection() {
     <>
       <div className="h-screen w-full mt-16 flex flex-col lg:flex-row lg:justify-center lg:flex-wrap lg:fixed">
         <div
-          // className={`h-screen  ${
-          //   isMobile ? "hidden" : "w-6/12"
-          // }`}
-          className="hidden md:flex bg-gray md:h-screen md:w-6/12"
+          className="hidden md:flex bg-green md:h-screen md:w-6/12"
         >
          <OurMap/>
         </div>
         <div
-          className={`h-screen bg-RightGray md:overflow-y-auto  md:py-10 md:px-4  ${
-            isMobile ? "w-full" : "w-6/12"
+          className={`h-screen bg-RightGray  md:overflow-y-auto  md:py-10 md:px-4  ${
+            isMobile ? "w-screen" : "w-6/12"
           }`}
+
+          
         >
           <HousesFilter />
-          <HouseCard/>
+          <div className="bg-RightGray w-screen md:w-auto md:grid  md:grid-cols-2 md:gap-2 mb-10">
+        {[0,1,2,3].map(() => {
+            return <HouseCard />;
+          })}
+        </div>
         </div>
       </div>
     </>

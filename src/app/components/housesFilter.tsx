@@ -30,7 +30,7 @@ export default function HousesFilter() {
 
     return (
       <main className=" flex-col items-center bg-RightGray justify-between ">
-        <div className="md:flex h-10  md:items-center md:justify-between w-full">
+        <div className="md:flex h-10 mt-4 md:mt-0 md:items-center md:justify-between w-screen">
           <div className="">
             <p className="pl-2 text-xl font-semibold">
               Washington, DC, DC homes for sale
@@ -49,7 +49,7 @@ export default function HousesFilter() {
           </div>
         </div>
 
-        <div className="w-full mt-8 ">
+        <div className="hidden md:flex w-full mt-8 ">
           <ul className="hidden md:flex ">
             {links.map(({ id, link }) => (
               <li
@@ -86,8 +86,8 @@ export default function HousesFilter() {
           </ul>
         </div>
 
-        <div className="flex justify-between align-center  mt-6 items-center h-10">
-          <div className="sm:w-full  md:w-auto md:flex md:justify-around align-center">
+        <div className="flex justify-between align-center  w-screen md:w-auto  md:mt-6 items-center md:h-10">
+          <div className="w-screen  flex md:w-auto md:flex md:justify-around align-center">
             <p className="px-2 font-semibold">2,355 homes</p>
 
             <p className="font-semibold px-2">Sort:</p>
@@ -107,13 +107,7 @@ export default function HousesFilter() {
           </div>
         </div>
 
-        <div className="bg-RightGray w-full md:w-auto grid md:grid-cols-2 md:gap-2 mb-10">
-          {/* <HouseCard/>  */}
-
-          {[0,1,2,3].map(() => {
-            return <HouseCard />;
-          })}
-        </div>
+        
       </main>
     );
   }

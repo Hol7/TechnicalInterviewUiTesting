@@ -99,17 +99,17 @@ export default function NavBar() {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        className="cursor-pointer pr-4 z-40 text-gray-500 md:hidden"
       >
         {nav ? (
-          <Icon icon="material-symbols:close" style={{ color: "white", fontSize: "40px" }} />
+          <Icon icon="material-symbols:close" style={{ color: "white", fontSize: "50px" }} />
         ) : (
           <Icon icon="material-symbols:menu"  style={{ color: "black", fontSize: "20px" }}  />
         )}
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-black from-black to-gray-800 text-gray-500">
+        <ul className="flex flex-col justify-center items-center absolute z-30 top-0 left-0 w-full h-screen bg-black from-black to-gray-800 text-gray-500">
           {links.map(({ id, link }) => (
             <li
               key={id}

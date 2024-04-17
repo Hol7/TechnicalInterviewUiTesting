@@ -18,7 +18,7 @@ export default function HouseCard() {
         <div className="w-full md:max-w-2xl mx-auto">
           <div
             id="default-carousel"
-            className="relative  overflow-hidden shadow-lg"
+            className="visible sm:invisible lg:visible relative overflow-hidden shadow-lg"
             style={{
               borderTopLeftRadius: 6,
               borderTopRightRadius: 6,
@@ -41,7 +41,7 @@ export default function HouseCard() {
                 {/* <span className="absolute  transform -translate-x-1/2 -translate-y-1/2 text-xl font-semibold text-red md:text-2xl ">
                   First Slide ccxcxc
                 </span> */}
-                <div className=" hidden md:flex justify-around w-full ">
+                {/* <div className="hidden md:flex justify-around w-full ">
                   <p
                     className=" font-bold  bg-red text-white py-1 px-2 rounded-full font-normal text-xs "
                     style={{ zIndex: 1, top: 10 }}
@@ -54,7 +54,7 @@ export default function HouseCard() {
                   >
                     3D WALKTHROUGH
                   </p>
-                </div>
+                </div> */}
               </div>
 
               <div
@@ -88,8 +88,8 @@ export default function HouseCard() {
               </div>
             </div>
 
-            <div
-              className="flex absolute bottom-5 left-1/2 z-30 -translate-x-1/2 space-x-2"
+            {/* <div
+              className="flex absolute bottom-5 left-1/2 z-10 -translate-x-1/2 space-x-2"
               data-carousel-indicators
             >
               <button
@@ -104,7 +104,7 @@ export default function HouseCard() {
                 type="button"
                 className="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 focus:outline-none focus:bg-gray-400 transition"
               ></button>
-            </div>
+            </div> */}
 
             <button
               type="button"
