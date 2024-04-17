@@ -99,7 +99,7 @@ export default function GalleriedetailHouse() {
 dsdsds
           </div> */}
        
-        <div className="w-[30%] ">
+        <div className="w-[30%] grid justify-items-stretch  grid justify-center align-center items-center">
             <div className="flex py-4 px-1">
                 <p className="font-bold  text-2xl">Thinking of buying?</p>
             </div>
@@ -120,6 +120,17 @@ dsdsds
                   <p className="">APR</p>
               </div>
          
+
+         <div className="absolute  ml-[290px] mt-8 border w-[40px] z-4 h-[40px] bg-white  hover border-borderNav rounded-md   flex justify-center justify-self-end align-center">
+          <button>
+
+         <Icon
+                    icon="uiw:right"
+                    style={{ fontSize: "22px" , color:"black" }}
+                    // className="mr-111"
+                  />
+          </button>
+         </div>
        
        
             </div>
