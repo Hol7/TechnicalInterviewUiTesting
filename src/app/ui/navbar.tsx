@@ -56,7 +56,7 @@ export default function NavBar() {
         </h3>
         </Link>
       
-        <input className="border hidden md:flex placeholder:text-borderNav  px-4 h-10 w-[350px] border-borderNav rounded-md"
+        <input className="border hidden md:flex placeholder:text-borderNav text-black px-4 h-10 w-[350px] border-borderNav rounded-md"
          placeholder="City, Address, School, Agent, Zip"
         />
         <button className="bg-red h-[40px] w-[40px] grid justify-center align-center items-center  ml-3 rounded-md">
