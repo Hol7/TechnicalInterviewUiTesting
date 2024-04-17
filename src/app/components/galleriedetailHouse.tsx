@@ -13,29 +13,25 @@ export default function GalleriedetailHouse() {
 	return (
     <div className=" pt-4 px-40">
       <div className=" flex justify-center align-center w-full h-[400px]">
-        <div className="w-[70%] pl-14 flex  r justify-center content-center align-center">
+        <div className="w-[70%] pl-14 flex   cursor-pointer r justify-center content-center align-center">
           <Image
             src={profilePic}
             alt="Picture of the author"
-            //   src="/house1.jpeg"
-            //   width={1000}
-            //   height={400}
-
               style={{
                 borderTopLeftRadius: 6,
                 // borderTopRightRadius: 6,
                 borderBottomLeftRadius:6,
-                // objectFit: "contain",
+                // objectFit: "contain",\
               }}
-            //   alt="Picture of the author"
+              className="hover:opacity-80"
           />
         </div>
         <div className="w-[30%] grid  justify-center align-center">
-          <div className="w-full ml-1 pb-1 h-[200px] flex justify-center align-center">
-            <Image src={profilePic1} alt="Picture of the author" />
+          <div className="w-full ml-1 cursor-pointer  pb-1 h-[200px] flex justify-center align-center">
+            <Image src={profilePic1} alt="Picture of the author" className="hover:opacity-80" />
           </div>
-          <div className="w-full ml-1  pt-1 h-[200px] flex justify-center align-center ">
-            <Image src={profilePic} alt="Picture of the author" />
+          <div className="w-full ml-1  cursor-pointer pt-1 h-[200px] flex justify-center align-center ">
+            <Image src={profilePic} alt="Picture of the author" className="hover:opacity-80"/>
           </div>
         </div>
       </div>
