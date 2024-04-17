@@ -30,18 +30,18 @@ export default function HousesFilter() {
 
     return (
       <main className=" flex-col items-center bg-RightGray justify-between ">
-        <div className="flex h-10  items-center justify-between w-full">
-          <div>
+        <div className="md:flex h-10  md:items-center md:justify-between w-full">
+          <div className="">
             <p className="pl-2 text-xl font-semibold">
               Washington, DC, DC homes for sale
             </p>
           </div>
-          <div>
+          <div className="hidden md:flex">
             <button className="text-lightGreen cursor hover:underline font-semibold text-base">
               {" "}
               Market insights |
             </button>
-            
+
             <button className="text-lightGreen cursor hover:underline font-semibold text-base">
               {" "}
                City guide
@@ -60,16 +60,20 @@ export default function HousesFilter() {
                   href={link}
                   className="text-sm flex justify-between items-center"
                 >
-                   {id === 5 ? (
+                  {id === 5 ? (
                     <Icon
                       icon="lets-icons:filter-big"
                       style={{ fontSize: "18px" }}
                       className="mr-2"
                     />
-                  ) : ""}
+                  ) : (
+                    ""
+                  )}
                   {link}
 
-                  {id === 5 ? "": (
+                  {id === 5 ? (
+                    ""
+                  ) : (
                     <Icon
                       icon="teenyicons:down-solid"
                       style={{ fontSize: "8px" }}
@@ -83,41 +87,33 @@ export default function HousesFilter() {
         </div>
 
         <div className="flex justify-between align-center  mt-6 items-center h-10">
-            <div className="flex justify-around align-center">
-                <p className="px-2 font-semibold">2,355 homes</p>
+          <div className="sm:w-full  md:w-auto md:flex md:justify-around align-center">
+            <p className="px-2 font-semibold">2,355 homes</p>
 
-                <p className="font-semibold px-2">Sort:</p>
-                <select className="text-lightGreen font-normal bg-RightGray">
-                    <option className="font-thin">Recommended</option>
-                    <option className="font-thin">Newest</option>
-                    <option className="font-thin">Price</option>
-                </select>
-
+            <p className="font-semibold px-2">Sort:</p>
+            <select className="text-lightGreen font-normal bg-RightGray">
+              <option className="font-thin">Recommended</option>
+              <option className="font-thin">Newest</option>
+              <option className="font-thin">Price</option>
+            </select>
+          </div>
+          <div className="hidden md:flex justify-around   align-center">
+            <div className="px-5 ">
+              <p className="font-semibold px-2">Photos</p>
             </div>
-            <div className="flex justify-around   align-center">
-                <div className="px-5 ">
-                <p className="font-semibold px-2">Photos</p>
-                </div>
-                <div className="px-10">
-                <p>Table</p>
-                </div>
-
+            <div className="px-10">
+              <p>Table</p>
             </div>
+          </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-2 mb-10">
-        <HouseCard/> 
-        <HouseCard/> 
-        <HouseCard/> 
-        <HouseCard/> 
-        <HouseCard/> 
-        <HouseCard/> 
-        <HouseCard/> 
+        <div className="bg-RightGray w-full md:w-auto grid md:grid-cols-2 md:gap-2 mb-10">
+          {/* <HouseCard/>  */}
 
+          {[0,1,2,3].map(() => {
+            return <HouseCard />;
+          })}
         </div>
-
-        {/* <HouseCard/> */}
-     
       </main>
     );
   }

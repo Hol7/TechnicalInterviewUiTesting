@@ -11,11 +11,11 @@ export default function HouseCard() {
   })
   return (
     // <main className=" min-h-screen  ">
-    <div className="w-[20rem] cursor-pointer hover:shadow shadow-md border border-borderNav rounded-md my-4">
+    <div className="bg-RightGray w-full md:w-[20rem] cursor-pointer hover:shadow shadow-md border border-borderNav rounded-md my-4">
      
   
-      <div className=" w-full h-[250px]  " style={{ objectFit: "contain" }}>
-        <div className="max-w-2xl mx-auto">
+      <div className="w-screen md:w-full h-[250px]  " style={{ objectFit: "contain" }}>
+        <div className="w-full md:max-w-2xl mx-auto">
           <div
             id="default-carousel"
             className="relative  overflow-hidden shadow-lg"
@@ -41,7 +41,7 @@ export default function HouseCard() {
                 {/* <span className="absolute  transform -translate-x-1/2 -translate-y-1/2 text-xl font-semibold text-red md:text-2xl ">
                   First Slide ccxcxc
                 </span> */}
-                <div className=" flex justify-around w-full ">
+                <div className=" hidden md:flex justify-around w-full ">
                   <p
                     className=" font-bold  bg-red text-white py-1 px-2 rounded-full font-normal text-xs "
                     style={{ zIndex: 1, top: 10 }}
@@ -193,7 +193,7 @@ export default function HouseCard() {
         </div> */}
       </div>
       <Link href='/houses'>
-      <div className="flex w-full justify-between p-4">
+      <div className="w-screen flex w-full justify-between p-4">
         <p className="font-bold">$ 750000</p>
 
         <div className="w-20 flex align-center justify-between ">
@@ -216,7 +216,7 @@ export default function HouseCard() {
           </button>
         </div>
       </div>
-      <div className="py-1 mb-4 px-4">
+      <div className="w-screen md:w-auto py-1 mb-4 px-4">
         <div className="w-full flex justify-start align-center  ">
           <p className="font-light pr-8">2 bed</p>
           <p className="font-light pr-8">2 path</p>

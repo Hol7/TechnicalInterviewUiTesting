@@ -18,16 +18,17 @@ export default function CenterTwoSection() {
 
   return (
     <>
-      <div className="h-screen w-full mt-16 flex flex-col lg:flex-row lg:justify-center lg:flex-wrap fixed">
+      <div className="h-screen w-full mt-16 flex flex-col lg:flex-row lg:justify-center lg:flex-wrap lg:fixed">
         <div
-          className={`h-screen  bg-blue   ${
-            isMobile ? "hidden" : "w-6/12"
-          }`}
+          // className={`h-screen  ${
+          //   isMobile ? "hidden" : "w-6/12"
+          // }`}
+          className="hidden md:flex bg-gray md:h-screen md:w-6/12"
         >
          <OurMap/>
         </div>
         <div
-          className={`h-screen bg-RightGray overflow-y-auto  py-10 px-4  ${
+          className={`h-screen bg-RightGray md:overflow-y-auto  md:py-10 md:px-4  ${
             isMobile ? "w-full" : "w-6/12"
           }`}
         >
