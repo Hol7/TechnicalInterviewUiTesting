@@ -103,7 +103,7 @@ dsdsds
             <div className="flex py-4 px-1">
                 <p className="font-bold  text-2xl">Thinking of buying?</p>
             </div>
-            <div className="grid grid-cols-3 gap-2 p-2 overflow-visible overflow-auto bg-red">
+            <div className="flex gap-2 p-2 w-full overflow-visible overflow-x-scroll ">
               <div className="border grid  mb-1 rounded-lg  cursor-pointer hover:text-lightGreen justify-center py-1 text-center w-[100px]">
                   <p className="px-1 text-xs">WEDNESDAY</p>
                   <p className="p-1 font-bold text-3xl">17</p>
@@ -119,6 +119,8 @@ dsdsds
                   <p className="p-1 font-bold text-3xl">19</p>
                   <p className="">APR</p>
               </div>
+         
+       
        
             </div>
         
