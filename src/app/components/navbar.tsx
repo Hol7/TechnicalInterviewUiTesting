@@ -113,7 +113,7 @@ export default function NavBar() {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+              className="px-2 cursor-pointer capitalize py-6 text-4xl"
             >
               <Link onClick={() => setNav(!nav)} href={link}>
                 {link}
