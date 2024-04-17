@@ -12,7 +12,7 @@ export default function HouseCard() {
   return (
     // <main className=" min-h-screen  ">
     <div className="w-[20rem] cursor-pointer hover:shadow shadow-md border border-borderNav rounded-md my-4">
-      <Link href='/houses'>
+     
   
       <div className=" w-full h-[250px]  " style={{ objectFit: "contain" }}>
         <div className="max-w-2xl mx-auto">
@@ -192,6 +192,7 @@ export default function HouseCard() {
           </p>
         </div> */}
       </div>
+      <Link href='/houses'>
       <div className="flex w-full justify-between p-4">
         <p className="font-bold">$ 750000</p>
 
